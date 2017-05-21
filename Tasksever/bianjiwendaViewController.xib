@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="bianjiwendaViewController">
+            <connections>
+                <outlet property="timuTextView" destination="2MJ-eI-n8r" id="WtW-9c-b9c"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wentimiaoshuTextView" destination="umn-VI-qks" id="h3d-sy-TBR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="UIControl">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2MJ-eI-n8r">
+                    <rect key="frame" x="0.0" y="71" width="375" height="71"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="375" id="5Qt-Dg-euK"/>
+                        <constraint firstAttribute="height" constant="71" id="mbR-CO-bR3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="E0o-zM-XVa"/>
+                    </connections>
+                </textView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="umn-VI-qks">
+                    <rect key="frame" x="0.0" y="150" width="375" height="260"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="375" id="D92-5B-JlF"/>
+                        <constraint firstAttribute="height" constant="260" id="I2t-8x-Toc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="hJy-iN-glj"/>
+                    </connections>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="0.92329297556719014" green="0.92329297556719014" blue="0.92329297556719014" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="umn-VI-qks" firstAttribute="top" secondItem="2MJ-eI-n8r" secondAttribute="bottom" constant="8" id="A09-Pw-a4l"/>
+                <constraint firstItem="2MJ-eI-n8r" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bRi-cr-64e"/>
+                <constraint firstItem="2MJ-eI-n8r" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="71" id="kX5-Tq-Ni1"/>
+                <constraint firstItem="umn-VI-qks" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="upv-G5-bgW"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <connections>
+                <action selector="endEditing:" destination="-1" eventType="touchDown" id="gVr-Sa-N9C"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </view>
+    </objects>
+</document>
